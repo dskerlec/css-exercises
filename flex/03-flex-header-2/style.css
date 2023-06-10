@@ -9,6 +9,8 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -27,6 +29,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  padding: 8px;
 }
 
 button {
@@ -44,5 +47,24 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.left-links , .right-links {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.right-links {
+  justify-content: flex-end;
+}
+
+.left-links {
+  justify-content: flex-start;
 }
